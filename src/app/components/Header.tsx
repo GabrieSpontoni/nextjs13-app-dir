@@ -1,5 +1,6 @@
 import { BsGithub } from "react-icons/bs";
 import { MdDarkMode } from "react-icons/md";
+import { ThemeSwitcher } from "./ThemeSwitcher";
 
 export function Header() {
   return (
@@ -13,22 +14,7 @@ export function Header() {
           </label>
         </div>
         <div className="dropdown dropdown-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <div className="indicator">
-              <MdDarkMode size={24} />
-            </div>
-          </label>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute"
-          >
-            <li>
-              <a>Dark Mode</a>
-            </li>
-            <li>
-              <a>Light Mode</a>
-            </li>
-          </ul>
+          <ThemeSwitcher />
         </div>
       </div>
     </div>

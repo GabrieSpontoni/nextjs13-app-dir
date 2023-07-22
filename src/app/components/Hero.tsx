@@ -15,7 +15,9 @@ export function Hero() {
         </div>
 
         <div className="animate-flip-up">
-          <h1 className="text-5xl font-bold">Gabriel Spontoni</h1>
+          <h1 className="text-5xl font-bold dark:text-red-600">
+            Gabriel Spontoni
+          </h1>
           <p className="py-6">
             Desenvolvedor front-end, com habilidades em HTML, CSS e JavaScript.
             Sua paixão pela criação de interfaces atraentes e funcionais
