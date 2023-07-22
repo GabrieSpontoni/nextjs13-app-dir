@@ -2,7 +2,7 @@ import NextImage from "next/image";
 
 export function Hero() {
   return (
-    <div className="hero min-h-screen bg-base-200">
+    <div className="hero min-h-screen bg-base-200 relative z-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
           <NextImage
