@@ -1,6 +1,6 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
-import { Header } from "./components/Header";
-import { Hero } from "./components/Hero";
+import { Header } from "@/components/Header";
+import { Hero } from "@/components/Hero";
 
 interface HomeProps extends ParamsLocaleModel {}
 
