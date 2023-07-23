@@ -5,6 +5,7 @@ import { IconBaseProps } from "react-icons/lib";
 import {
   SiChakraui,
   SiCss3,
+  SiGit,
   SiHtml5,
   SiJavascript,
   SiMui,
@@ -25,7 +26,7 @@ export async function Hero({ params }: HeroProps) {
     size: 24,
   };
   return (
-    <div className="hero min-h-screen bg-base-200 relative z-0 ">
+    <div className="hero min-h-screen max-h-4 bg-base-200 relative z-0 ">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
           <NextImage
@@ -42,18 +43,48 @@ export async function Hero({ params }: HeroProps) {
           <p className="py-6">{t("description")}</p>
           <div>
             <span className="footer-title">{t("footerTitle")}</span>
-            <div className="flex gap-4 mt-4">
-              <SiHtml5 {...PropsIcon} />
-              <SiCss3 {...PropsIcon} />
-              <SiJavascript {...PropsIcon} />
-              <SiTypescript {...PropsIcon} />
-              <SiReact {...PropsIcon} />
-              <SiReactquery {...PropsIcon} />
-              <SiNextdotjs {...PropsIcon} />
-              <SiTailwindcss {...PropsIcon} />
-              <SiRedux {...PropsIcon} />
-              <SiChakraui {...PropsIcon} />
-              <SiMui {...PropsIcon} />
+            <div className="grid grid-cols-3 gap-4 mt-4 w-full sm:flex">
+              <div className="flex justify-center items-center">
+                <SiHtml5 {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiCss3 {...PropsIcon} />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <SiJavascript {...PropsIcon} />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <SiTypescript {...PropsIcon} />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <SiReact {...PropsIcon} />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <SiReactquery {...PropsIcon} />
+              </div>
+
+              <div className="flex justify-center items-center">
+                <SiNextdotjs {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiTailwindcss {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiRedux {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiChakraui {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiMui {...PropsIcon} />
+              </div>
+              <div className="flex justify-center items-center">
+                <SiGit {...PropsIcon} />
+              </div>
             </div>
           </div>
         </div>
