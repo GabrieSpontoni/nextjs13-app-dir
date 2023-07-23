@@ -1,8 +1,10 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
 import { MdDarkMode } from "react-icons/md";
 export function ThemeSwitcher() {
   const { setTheme } = useTheme();
+  const t = useTranslations("Header");
 
   return (
     <div>
@@ -16,10 +18,10 @@ export function ThemeSwitcher() {
         className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute"
       >
         <li>
-          <a onClick={() => setTheme("light")}>Light</a>
+          <a onClick={() => setTheme("light")}>{t("light")}</a>
         </li>
         <li>
-          <a onClick={() => setTheme("night")}>Night</a>
+          <a onClick={() => setTheme("night")}>{t("dark")}</a>
         </li>
       </ul>
     </div>

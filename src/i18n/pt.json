@@ -1,6 +1,13 @@
 {
+  "Header": {
+    "light": "Claro",
+    "dark": "Escuro"
+  },
   "Hero": {
     "description": "Desenvolvedor graduado em Engenharia de Computação, com 3+ anos de experiência. Habilidades sólidas em CSS (Chakra UI, Bootstrap, Ant Design). Domínio em Redux, Zustand, Context, Next.js, Server Components e React Query. Compromisso em aprimorar habilidades front-end. Bem-vindo(a) à minha página web, onde compartilho conhecimentos e projetos!",
     "footerTitle": "Principais Tecnologias"
+  },
+  "Experience": {
+    "title": "Experiência"
   }
 }
