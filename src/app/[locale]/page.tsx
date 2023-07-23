@@ -1,11 +1,14 @@
+import { ParamsLocaleModel } from "@/types/paramsLocale";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 
-export default async function Home() {
+interface HomeProps extends ParamsLocaleModel {}
+
+export default async function Home({ params }: HomeProps) {
   return (
     <main>
       <Header />
-      <Hero />
+      <Hero params={params} />
     </main>
   );
 }

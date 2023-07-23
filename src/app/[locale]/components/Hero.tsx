@@ -1,9 +1,11 @@
-"use client";
-import { useTranslations } from "next-intl";
+import { ParamsLocaleModel } from "@/types/paramsLocale";
+import { getTranslator } from "next-intl/server";
 import NextImage from "next/image";
 
-export function Hero() {
-  const t = useTranslations("hero");
+interface HeroProps extends ParamsLocaleModel {}
+
+export async function Hero({ params }: HeroProps) {
+  const t = await getTranslator(params.locale, "Hero");
   return (
     <div className="hero min-h-screen bg-base-200 relative z-0">
       <div className="hero-content flex-col lg:flex-row-reverse">
