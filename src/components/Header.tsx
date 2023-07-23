@@ -1,6 +1,7 @@
-import { BsGithub } from "react-icons/bs";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { ThemeSwitcher } from "./ThemeSwitcher";
 import { LanguageSwitcher } from "./LanguageSwitcher";
+import Link from "next/link";
 
 export function Header() {
   return (
@@ -14,9 +15,19 @@ export function Header() {
         </div>
         <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost btn-circle">
-            <div className="indicator">
+            <Link href="https://github.com/GabrieSpontoni" target="_blank">
               <BsGithub size={24} />
-            </div>
+            </Link>
+          </label>
+        </div>
+        <div className="dropdown dropdown-end">
+          <label tabIndex={0} className="btn btn-ghost btn-circle">
+            <Link
+              href="https://www.linkedin.com/in/gabriel-spontoni-4816b519a/"
+              target="_blank"
+            >
+              <BsLinkedin size={24} />
+            </Link>
           </label>
         </div>
       </div>

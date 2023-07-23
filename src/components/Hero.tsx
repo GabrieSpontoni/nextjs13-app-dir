@@ -26,7 +26,7 @@ export async function Hero({ params }: HeroProps) {
     size: 24,
   };
   return (
-    <div className="hero min-h-screen max-h-4 bg-base-200 relative z-0 ">
+    <div className="hero min-h-screen bg-base-200 relative z-0 ">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div>
           <NextImage
