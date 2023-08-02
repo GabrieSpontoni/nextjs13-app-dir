@@ -2,6 +2,7 @@
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
 import NextImage from "next/image";
+import Link from "next/link";
 
 interface ExperienceProps {}
 
@@ -18,63 +19,58 @@ export function Experience({}: ExperienceProps) {
 
   const experienceList: ExperienceList[] = [
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/b&t.png",
+      company: "B&T",
+      description: t("descriptions.B&T"),
+      image: "/images/bt.png",
+      url: "https://btcambio.com.br/",
     },
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/cinemark.webp",
+      company: "Cinemark",
+      description: t("descriptions.Cinemark"),
+      image: "/images/cinemark.png",
+      url: "",
     },
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/cargo_place.png",
+      company: "Cargo Place",
+      description: t("descriptions.CargoPlace"),
+      image: "/images/cargo_place_logo.png",
+      url: "https://cargoplace.com/",
     },
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/arco.png",
+      company: "Arco",
+      description: t("descriptions.Arco"),
+      image: "/images/arcooo.png",
+      url: "https://arcoeducacao.com.br/",
     },
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/marvin.jpg",
+      company: "Marvin",
+      description: t("descriptions.Marvin"),
+      image: "/images/marvin-removebg-preview.png",
+      url: "https://omarvin.com.br/login",
     },
     {
-      company: "",
-      description: "",
-      image: "",
-      url: "/images/zap.png",
+      company: "Zap Delivery",
+      description: t("descriptions.Zap"),
+      image: "/images/zapp.png",
+      url: "https://zapdelivery.me/",
     },
   ];
 
   return (
-    <div className="min-h-screen bg-base-300 pt-12 justify-center text-center">
+    <div className="min-h-screen bg-base-300 pt-12 justify-center text-center mb-4">
       <h1
         ref={ref}
-        className={`${
-          inView && "animate-flip-up"
-        } text-5xl font-beginner p-0 text-center`}
+        className={`${inView && "animate-flip-up"} text-5xl p-0 text-center`}
       >
         {t("title")}
       </h1>
       <div className="grid grid-cols-1 mt-20 gap-5 max-w-7xl mx-4 lg:mx-auto lg:grid-cols-2">
         {experienceList.map((experience, index) => (
-          <div
-            key={index}
-            className="card lg:card-side bg-base-100 shadow-xl h-56"
-          >
-            <figure className="card-image lg:pl-4">
-              <div className="flex justify-center items-center h-32 w-32 relative">
+          <div className="card shadow-xl image-full z-0" key={index}>
+            <figure>
+              <div className="flex justify-center items-center h-full w-full relative">
                 <NextImage
-                  src={experience.url}
+                  src={experience.image}
                   alt={experience.company}
                   fill
                   style={{
@@ -88,7 +84,9 @@ export function Experience({}: ExperienceProps) {
               <h2 className="card-title">{experience.company}</h2>
               <p>{experience.description}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Acessar</button>
+                <Link href={experience.url} target="_blank">
+                  <button className="btn btn-primary">Acessar</button>
+                </Link>
               </div>
             </div>
           </div>

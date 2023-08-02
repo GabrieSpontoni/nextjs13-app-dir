@@ -8,6 +8,16 @@
     "footerTitle": "Main Technologies"
   },
   "Experience": {
-    "title": "Experience"
+    "title": "Experience",
+    "descriptions": {
+      "B&T": "Front-end Developer at B&T, a technology company operating in the foreign exchange market. I work on the development of a payment management system using React, JavaScript, Redux, and Material-UI.",
+      "Cinemark": "Front-end Developer at Cinemark, a company in the cinema industry. I work on building applications using Next.js 13, Chakra UI, React Query, and Zustand.",
+      "CargoPlace": "Front-end Developer at Cargo Place, a company in the freight transportation industry. I work on building applications using Next.js, Context API, and Chakra UI.",
+      "Arco": "Front-end Developer at Arco, a company in the education sector. I work on building applications using Next.js, Context API, and Chakra UI.",
+      "Marvin": "Full Stack Developer at Marvin, a company in the real estate market. I work on building applications using React, JavaScript, Redux, and Material-UI.",
+      "Zap": "Back-end Developer at Zap, a company in the delivery industry. I work on building applications using Node.js."
+    }
   }
 }
+  
+
