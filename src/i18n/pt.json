@@ -4,11 +4,14 @@
     "dark": "Escuro"
   },
   "Hero": {
-    "description": "Desenvolvedor graduado em Engenharia de Computação, com 3+ anos de experiência. Habilidades sólidas em CSS (Chakra UI, Bootstrap, Ant Design). Domínio em Redux, Zustand, Context, Next.js, Server Components e React Query. Compromisso em aprimorar habilidades front-end. Bem-vindo(a) à minha página web, onde compartilho conhecimentos e projetos!",
+    "description": "Desenvolvedor Front-end graduado em Engenharia de Computação, com 3+ anos de experiência. Tenho atuado com destaque na empresa MB Labs por mais de um ano, contribuindo para projetos de grande escala e trabalhando com tecnologias avançadas. Possuo habilidades sólidas em frameworks CSS (Chakra UI, Bootstrap, Ant Design), Redux, Zustand, Context, Next.js, Server Components, React Query entre outras tecnologias voltadas para o React. Sempre compromissado em aprimorar habilidades front-end. Bem-vindo(a) à minha página web, onde compartilho conhecimentos e projetos!",
+    "developer": "Desenvolvedor Front-end",
     "footerTitle": "Principais Tecnologias"
   },
   "Experience": {
     "title": "Experiência",
+    "access": "Acessar",
+    "commingSoon": "Em breve",
     "descriptions": {
       "B&T": "Desenvolvedor Front-end na B&T, empresa de tecnologia que atua no mercado de câmbio. Trabalho no desenvolvimento de um sistema de gestão de pagamentos, utilizando as tecnologias React, JavaScript, Redux e Material-UI.",
       "Cinemark": "Desenvolvedor Front-end na Cinemark, empresa do ramo de cinema. Trabalho no desenvolvimento de aplicações utilizando as tecnologias Next.js 13, Chakra UI, React Query e Zustand.",

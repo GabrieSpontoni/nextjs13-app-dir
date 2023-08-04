@@ -4,11 +4,14 @@
     "dark": "Dark"
   },
   "Hero": {
-    "description": "Graduated in Computer Engineering from the Federal University of Mato Grosso do Sul with over 3 years of experience. I possess strong skills in CSS frameworks like Chakra UI, Bootstrap, and Ant Design, among others. Committed to continuously improving my front-end abilities and always seeking new opportunities to grow in my career as a developer. Welcome to my webpage, where I share my knowledge and projects in the development field!",
+    "description": "Front-end Developer graduated in Computer Engineering, with 3+ years of experience. I have been prominently engaged at MB Labs for over a year, contributing to large-scale projects and working with advanced technologies. I possess strong skills in CSS frameworks (Chakra UI, Bootstrap, Ant Design), Redux, Zustand, Context, Next.js, Server Components, React Query, and other technologies related to React. I am always committed to improving my front-end skills. Welcome to my webpage, where I share knowledge and projects!",
+    "developer": "Developer Front-end",
     "footerTitle": "Main Technologies"
   },
   "Experience": {
     "title": "Experience",
+    "access": "Access",
+    "commingSoon": "Comming Soon",
     "descriptions": {
       "B&T": "Front-end Developer at B&T, a technology company operating in the foreign exchange market. I work on the development of a payment management system using React, JavaScript, Redux, and Material-UI.",
       "Cinemark": "Front-end Developer at Cinemark, a company in the cinema industry. I work on building applications using Next.js 13, Chakra UI, React Query, and Zustand.",

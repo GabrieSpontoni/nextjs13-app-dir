@@ -1,6 +1,7 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
 import { getTranslator } from "next-intl/server";
 import NextImage from "next/image";
+import Link from "next/link";
 import { IconBaseProps } from "react-icons/lib";
 import {
   SiChakraui,
@@ -39,8 +40,23 @@ export async function Hero({ params }: HeroProps) {
         </div>
 
         <div className="animate-flip-up">
-          <h1 className="text-5xl font-beginner">Gabriel Spontoni</h1>
+          <div className="flex justify-center lg:justify-start">
+            <h1 className="text-5xl font-beginner">Gabriel Spontoni</h1>
+          </div>
           <p className="py-6">{t("description")}</p>
+          <div className="mb-4">
+            <span className="footer-title">{t("developer")}</span>
+            <div className="mt-4 w-36 bg-black pt-1 mx-auto lg:mx-0">
+              <Link href="https://mblabs.com.br/" target="_blank">
+                <NextImage
+                  src="/images/logo-mb-labs.png"
+                  alt="Logo MBLabs"
+                  width={138}
+                  height={34}
+                />
+              </Link>
+            </div>
+          </div>
           <div>
             <span className="footer-title">{t("footerTitle")}</span>
             <div className="grid grid-cols-3 gap-4 mt-4 w-full sm:flex">

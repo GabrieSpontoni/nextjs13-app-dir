@@ -57,7 +57,7 @@ export function Experience({}: ExperienceProps) {
   ];
 
   return (
-    <div className="min-h-screen bg-base-300 pt-12 justify-center text-center mb-4">
+    <div className="min-h-screen bg-base-300 justify-center text-center py-12">
       <h1
         ref={ref}
         className={`${inView && "animate-flip-up"} text-5xl p-0 text-center`}
@@ -84,9 +84,11 @@ export function Experience({}: ExperienceProps) {
               <h2 className="card-title">{experience.company}</h2>
               <p>{experience.description}</p>
               <div className="card-actions justify-end">
-                <Link href={experience.url} target="_blank">
-                  <button className="btn btn-primary">Acessar</button>
-                </Link>
+                <button className="btn btn-primary" disabled={!experience.url}>
+                  <Link href={experience.url} target="_blank">
+                    {experience.url ? t("access") : t("commingSoon")}
+                  </Link>
+                </button>
               </div>
             </div>
           </div>
