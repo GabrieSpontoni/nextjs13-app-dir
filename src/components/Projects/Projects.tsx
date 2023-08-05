@@ -3,21 +3,23 @@ import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
 import NextImage from "next/image";
 import Link from "next/link";
+import { RenderCondition } from "@/utils/RenderCondition";
 
-interface ExperienceProps {}
+interface ProjectsProps {}
 
-interface ExperienceList {
+interface ProjectsList {
   company: string;
   description: string;
   image: string;
   url: string;
+  isComingSoon?: boolean;
 }
 
-export function Experience({}: ExperienceProps) {
+export function Projects({}: ProjectsProps) {
   const { ref, inView } = useInView({});
-  const t = useTranslations("Experience");
+  const t = useTranslations("Projects");
 
-  const experienceList: ExperienceList[] = [
+  const projectsList: ProjectsList[] = [
     {
       company: "B&T",
       description: t("descriptions.B&T"),
@@ -29,6 +31,7 @@ export function Experience({}: ExperienceProps) {
       description: t("descriptions.Cinemark"),
       image: "/images/cinemark.png",
       url: "",
+      isComingSoon: true,
     },
     {
       company: "Cargo Place",
@@ -58,35 +61,44 @@ export function Experience({}: ExperienceProps) {
 
   return (
     <div className="min-h-screen bg-base-300 justify-center text-center py-12">
-      <h1
+      <h1 className="text-5xl p-0 text-center">{t("title")}</h1>
+      <div
+        className={`grid grid-cols-1 mt-10 gap-5 max-w-7xl mx-4 lg:mx-auto lg:grid-cols-2 ${
+          inView && "animate-fade-left animate-duration-[2000ms]"
+        }`}
         ref={ref}
-        className={`${inView && "animate-flip-up"} text-5xl p-0 text-center`}
       >
-        {t("title")}
-      </h1>
-      <div className="grid grid-cols-1 mt-20 gap-5 max-w-7xl mx-4 lg:mx-auto lg:grid-cols-2">
-        {experienceList.map((experience, index) => (
+        {projectsList.map((project, index) => (
           <div className="card shadow-xl image-full z-0" key={index}>
             <figure>
               <div className="flex justify-center items-center h-full w-full relative">
-                <NextImage
-                  src={experience.image}
-                  alt={experience.company}
-                  fill
-                  style={{
-                    objectFit: "scale-down",
-                  }}
-                  quality={100}
-                />
+                <RenderCondition condition={!project.isComingSoon}>
+                  <NextImage
+                    src={project.image}
+                    alt={project.company}
+                    fill
+                    style={{
+                      objectFit: "scale-down",
+                    }}
+                    quality={100}
+                  />
+                </RenderCondition>
               </div>
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">{experience.company}</h2>
-              <p>{experience.description}</p>
+            <div className={`card-body ${!inView && "hidden"}`}>
+              <h2 className="card-title">
+                {project.isComingSoon ? t("commingSoon") : project.company}
+              </h2>
+              <p className="text-justify">
+                {project.isComingSoon ? t("commingSoon") : project.description}
+              </p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary" disabled={!experience.url}>
-                  <Link href={experience.url} target="_blank">
-                    {experience.url ? t("access") : t("commingSoon")}
+                <button
+                  className="btn btn-primary"
+                  disabled={project.isComingSoon}
+                >
+                  <Link href={project.url} target="_blank">
+                    {!project.isComingSoon ? t("access") : t("commingSoon")}
                   </Link>
                 </button>
               </div>

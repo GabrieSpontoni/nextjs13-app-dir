@@ -1,5 +1,5 @@
-import { ThemeSwitcher } from "./ThemeSwitcher";
-import { LanguageSwitcher } from "./LanguageSwitcher";
+import { ThemeSwitcher } from "../ThemeSwitcher/ThemeSwitcher";
+import { LanguageSwitcher } from "../LanguageSwitcher/LanguageSwitcher";
 
 export function Header() {
   return (

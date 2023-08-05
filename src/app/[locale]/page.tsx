@@ -1,7 +1,7 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { Experience } from "@/components/Experience";
+import { Projects } from "@/components/Projects";
 import { Footer } from "@/components/Footer";
 
 interface HomeProps extends ParamsLocaleModel {}
@@ -11,7 +11,7 @@ export default async function Home({ params }: HomeProps) {
     <main>
       <Header />
       <Hero params={params} />
-      <Experience />
+      <Projects />
       <Footer />
     </main>
   );

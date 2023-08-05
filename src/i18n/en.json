@@ -8,17 +8,17 @@
     "developer": "Developer Front-end",
     "footerTitle": "Main Technologies"
   },
-  "Experience": {
-    "title": "Experience",
+  "Projects": {
+    "title": "Projects",
     "access": "Access",
     "commingSoon": "Comming Soon",
     "descriptions": {
-      "B&T": "Front-end Developer at B&T, a technology company operating in the foreign exchange market. I work on the development of a payment management system using React, JavaScript, Redux, and Material-UI.",
-      "Cinemark": "Front-end Developer at Cinemark, a company in the cinema industry. I work on building applications using Next.js 13, Chakra UI, React Query, and Zustand.",
-      "CargoPlace": "Front-end Developer at Cargo Place, a company in the freight transportation industry. I work on building applications using Next.js, Context API, and Chakra UI.",
-      "Arco": "Front-end Developer at Arco, a company in the education sector. I work on building applications using Next.js, Context API, and Chakra UI.",
-      "Marvin": "Full Stack Developer at Marvin, a company in the real estate market. I work on building applications using React, JavaScript, Redux, and Material-UI.",
-      "Zap": "Back-end Developer at Zap, a company in the delivery industry. I work on building applications using Node.js."
+      "B&T": "Technology company operating in the foreign exchange market. I work on the development of a payment management system, using key technologies such as React, JavaScript, Redux, and Material-UI.",
+      "Cinemark": "A company that needs no introduction. I initially worked on the development and revamping of the new website, using major technologies such as Next.js 13, Chakra UI, React Query, and Zustand.",
+      "CargoPlace": "Cargo transportation company. I work on application development, using key technologies like Next.js, Context API, and Chakra UI.",
+      "Arco": "Arco, an education company. I work on application development, using key technologies like Next.js, Context API, and Chakra UI.",
+      "Marvin": "Full Stack Developer at Marvin, a real estate company. I work on application development, using key technologies like React, JavaScript, Redux, and Material-UI.",
+      "Zap": "Back-end Developer at Zap, a delivery company. I work on application development, using key technologies like Node.js."
     }
   }
 }
