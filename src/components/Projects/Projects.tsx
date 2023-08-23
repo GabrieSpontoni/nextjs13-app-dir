@@ -64,7 +64,7 @@ export function Projects({}: ProjectsProps) {
       <h1 className="text-5xl p-0 text-center">{t("title")}</h1>
       <div
         className={`grid grid-cols-1 mt-10 gap-5 max-w-7xl mx-4 lg:mx-auto lg:grid-cols-2 ${
-          inView && "animate-fade-left animate-duration-[2000ms]"
+          inView && "animate-fade-left animate-duration-[1000ms]"
         }`}
         ref={ref}
       >

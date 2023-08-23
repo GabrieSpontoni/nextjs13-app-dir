@@ -1,7 +1,9 @@
 {
   "Header": {
     "light": "Light",
-    "dark": "Dark"
+    "dark": "Dark",
+    "home": "Home",
+    "tutorials": "Tutorials"
   },
   "Hero": {
     "description": "Front-end Developer graduated in Computer Engineering, with 3+ years of experience. I have been prominently engaged at MB Labs for over a year, contributing to large-scale projects and working with advanced technologies. I possess strong skills in CSS frameworks (Chakra UI, Bootstrap, Ant Design), Redux, Zustand, Context, Next.js, Server Components, React Query, and other technologies related to React. I am always committed to improving my front-end skills. Welcome to my webpage, where I share knowledge and projects!",
