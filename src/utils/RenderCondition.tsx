@@ -1,6 +1,6 @@
 interface RenderConditionProps {
   condition?: boolean;
-  children?: JSX.Element;
+  children?: React.ReactNode;
 }
 
 export function RenderCondition({ condition, children }: RenderConditionProps) {

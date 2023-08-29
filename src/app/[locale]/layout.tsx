@@ -4,7 +4,6 @@ import { Providers } from "./Providers";
 import { NextIntlClientProvider } from "next-intl";
 import { notFound } from "next/navigation";
 import { edu_sa_beginner, inter, roboto_mono } from "./fonts";
-import { Header } from "@/components/Header";
 
 export const metadata: Metadata = {
   title: "Gabriel Spontoni",
@@ -36,10 +35,7 @@ export default async function RootLayout({
     >
       <body>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Providers>
-            <Header />
-            {children}
-          </Providers>
+          <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>
     </html>
