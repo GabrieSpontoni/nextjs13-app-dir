@@ -3,16 +3,15 @@ import { LanguageSwitcher } from "./components/LanguageSwitcher/LanguageSwitcher
 import { Links } from "./components/Links/Links";
 import { MdMenu } from "react-icons/md";
 import { RenderCondition } from "@/utils/RenderCondition";
-import { usePathname } from "next/navigation";
-import { urlsWithoutSidebar } from "@/utils/sidebar";
 
-export function Header() {
-  const pathname = usePathname();
-  const showMenuHamburguer =
-    !!pathname && !urlsWithoutSidebar.includes(pathname);
+interface HeaderProps {
+  withMenuHamburguer?: boolean;
+}
+
+export function Header({ withMenuHamburguer = true }: HeaderProps) {
   return (
     <div className="flex bg-base-100 fixed z-10 w-full">
-      <RenderCondition condition={showMenuHamburguer}>
+      <RenderCondition condition={withMenuHamburguer}>
         <label
           htmlFor="my-drawer-2"
           className="btn my-2 lg:hidden bg-transparent border-none"
