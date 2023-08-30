@@ -9,7 +9,7 @@ import { usePathname } from "next/navigation";
 export function Providers({ children }: React.PropsWithChildren<{}>) {
   const urlsWithoutSidebar = ["/"];
   const pathname = usePathname();
-  const showSidebar = !urlsWithoutSidebar.includes(pathname);
+  const showSidebar = !!pathname && !urlsWithoutSidebar.includes(pathname);
   return (
     <ThemeProvider>
       <Header />
