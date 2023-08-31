@@ -22,5 +22,9 @@
       "Marvin": "Desenvolvedor Full Stack na Marvin, empresa do ramo de imóveis. Trabalho no desenvolvimento de aplicações utilizando como principais tecnologias React, JavaScript, Redux e Material-UI.",
       "Zap": "Desenvolvedor Back-end na Zap, empresa do ramo de delivery. Trabalho no desenvolvimento de aplicações utilizando como principais tecnologias Node.js."
     }
+  },
+  "Tutorials": {
+    "title": "Tutoriais",
+    "description": "Acompanhe tutoriais sobre os principais recursos para a construção de aplicações web modernas usando Next.js."
   }
 }
