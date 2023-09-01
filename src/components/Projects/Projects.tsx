@@ -73,6 +73,7 @@ export function Projects({}: ProjectsProps) {
             src={project.image}
             alt={project.company}
             href={project.url}
+            isTargetBlank
           />
         ))}
       </div>
