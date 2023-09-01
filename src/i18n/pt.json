@@ -1,4 +1,8 @@
 {
+  "Common": {
+    "access": "Acessar",
+    "commingSoon": "Em breve"
+  },
   "Header": {
     "light": "Claro",
     "dark": "Escuro",
@@ -12,8 +16,6 @@
   },
   "Projects": {
     "title": "Projetos",
-    "access": "Acessar",
-    "commingSoon": "Em breve",
     "descriptions": {
       "B&T": "Empresa de tecnologia que atua no mercado de câmbio. Trabalho no desenvolvimento de um sistema de gestão de pagamentos, utilizando como principais tecnologias React, JavaScript, Redux e Material-UI.",
       "Cinemark": "Empresa que dispensa apresentação. Trabalho inicial no desenvolvimento e reformulação do novo site, utilizando como principais tecnologias Next.js 13, Chakra UI, React Query e Zustand.",
@@ -25,6 +27,10 @@
   },
   "Tutorials": {
     "title": "Tutoriais",
-    "description": "Acompanhe tutoriais sobre os principais recursos para a construção de aplicações web modernas usando Next.js."
+    "description": "Acompanhe tutoriais sobre os principais recursos para a construção de aplicações web modernas usando Next.js.",
+    "jest": {
+      "title": "Testes com Jest",
+      "description": "Aprenda a testar aplicações Next.js com Jest e React Testing Library."
+    }
   }
 }

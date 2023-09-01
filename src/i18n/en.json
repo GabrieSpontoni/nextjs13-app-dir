@@ -1,4 +1,8 @@
 {
+  "Common": {
+    "access": "Access",
+    "commingSoon": "Comming Soon"
+  },
   "Header": {
     "light": "Light",
     "dark": "Dark",
@@ -12,8 +16,6 @@
   },
   "Projects": {
     "title": "Projects",
-    "access": "Access",
-    "commingSoon": "Comming Soon",
     "descriptions": {
       "B&T": "Technology company operating in the foreign exchange market. I work on the development of a payment management system, using key technologies such as React, JavaScript, Redux, and Material-UI.",
       "Cinemark": "A company that needs no introduction. I initially worked on the development and revamping of the new website, using major technologies such as Next.js 13, Chakra UI, React Query, and Zustand.",
@@ -25,7 +27,11 @@
   },
   "Tutorials": {
     "title": "Tutorials",
-    "description": "Follow tutorials on key resources for building modern web applications using Next.js."
+    "description": "Follow tutorials on key resources for building modern web applications using Next.js.",
+    "jest": {
+      "title": "Testing with Jest",
+      "description": "Jest is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly."
+    }
   }
 }
   

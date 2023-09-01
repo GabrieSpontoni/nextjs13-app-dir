@@ -1,9 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import NextImage from "next/image";
-import Link from "next/link";
-import { RenderCondition } from "@/utils/RenderCondition";
+import { CardWithOverlay } from "../CardWithImageOverlay";
 
 interface ProjectsProps {}
 
@@ -12,12 +10,12 @@ interface ProjectsList {
   description: string;
   image: string;
   url: string;
-  isComingSoon?: boolean;
 }
 
 export function Projects({}: ProjectsProps) {
   const { ref, inView } = useInView({});
   const t = useTranslations("Projects");
+  const tCommon = useTranslations("Common");
 
   const projectsList: ProjectsList[] = [
     {
@@ -27,11 +25,10 @@ export function Projects({}: ProjectsProps) {
       url: "https://btcambio.com.br/",
     },
     {
-      company: "Cinemark",
-      description: t("descriptions.Cinemark"),
-      image: "/images/cinemark.png",
+      company: tCommon("commingSoon"),
+      description: tCommon("commingSoon"),
+      image: "",
       url: "",
-      isComingSoon: true,
     },
     {
       company: "Cargo Place",
@@ -69,41 +66,14 @@ export function Projects({}: ProjectsProps) {
         ref={ref}
       >
         {projectsList.map((project, index) => (
-          <div className="card shadow-xl image-full z-0" key={index}>
-            <figure>
-              <div className="flex justify-center items-center h-full w-full relative">
-                <RenderCondition condition={!project.isComingSoon}>
-                  <NextImage
-                    src={project.image}
-                    alt={project.company}
-                    fill
-                    style={{
-                      objectFit: "scale-down",
-                    }}
-                    quality={100}
-                  />
-                </RenderCondition>
-              </div>
-            </figure>
-            <div className={`card-body ${!inView && "hidden"}`}>
-              <h2 className="card-title">
-                {project.isComingSoon ? t("commingSoon") : project.company}
-              </h2>
-              <p className="text-justify">
-                {project.isComingSoon ? t("commingSoon") : project.description}
-              </p>
-              <div className="card-actions justify-end">
-                <button
-                  className="btn btn-primary"
-                  disabled={project.isComingSoon}
-                >
-                  <Link href={project.url} target="_blank">
-                    {!project.isComingSoon ? t("access") : t("commingSoon")}
-                  </Link>
-                </button>
-              </div>
-            </div>
-          </div>
+          <CardWithOverlay
+            key={index}
+            title={project.company}
+            description={project.description}
+            src={project.image}
+            alt={project.company}
+            href={project.url}
+          />
         ))}
       </div>
     </div>

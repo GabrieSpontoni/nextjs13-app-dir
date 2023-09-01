@@ -9,8 +9,8 @@ export function TitleAndDescription({
 }: TitleAndDescriptionProps) {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-gray-800">{title}</h1>
-      <div className="hero relative z-0">{description}</div>
+      <h1 className="text-4xl font-bold">{title}</h1>
+      <div>{description}</div>
     </div>
   );
 }
