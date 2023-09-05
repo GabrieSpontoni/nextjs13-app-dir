@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@types/node": "20.5.7",
+    "@types/node": "20.5.9",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
@@ -28,6 +28,6 @@
     "typescript": "5.2.2"
   },
   "devDependencies": {
-    "daisyui": "3.6.4"
+    "daisyui": "3.6.5"
   }
 }
