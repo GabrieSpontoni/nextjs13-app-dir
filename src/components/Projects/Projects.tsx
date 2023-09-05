@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import { CardWithOverlay } from "../CardWithImageOverlay";
+import { CardWithImageOverlay } from "../CardWithImageOverlay";
 
 interface ProjectsProps {}
 
@@ -66,7 +66,7 @@ export function Projects({}: ProjectsProps) {
         ref={ref}
       >
         {projectsList.map((project, index) => (
-          <CardWithOverlay
+          <CardWithImageOverlay
             key={index}
             title={project.company}
             description={project.description}

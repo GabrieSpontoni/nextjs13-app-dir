@@ -4,7 +4,7 @@ import NextImage from "next/image";
 import Link from "next/link";
 import { RenderCondition } from "@/utils/RenderCondition";
 
-interface CardWithOverlayProps {
+interface CardWithImageOverlayProps {
   src: string;
   alt: string;
   title: string;
@@ -13,14 +13,14 @@ interface CardWithOverlayProps {
   isTargetBlank?: boolean;
 }
 
-export function CardWithOverlay({
+export function CardWithImageOverlay({
   src,
   alt,
   title,
   description,
   href,
   isTargetBlank,
-}: CardWithOverlayProps) {
+}: CardWithImageOverlayProps) {
   const t = useTranslations("Common");
 
   return (
