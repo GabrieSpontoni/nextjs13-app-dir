@@ -2,9 +2,9 @@ import { ParamsLocaleModel } from "@/types/paramsLocale";
 import { TitleAndDescription } from "@/components/TitleAndDescription";
 import { getTranslator } from "next-intl/server";
 
-interface TutorialsProps extends ParamsLocaleModel {}
+interface TutorialsJestProps extends ParamsLocaleModel {}
 
-export default async function Tutorials({ params }: TutorialsProps) {
+export default async function TutorialsJest({ params }: TutorialsJestProps) {
   const t = await getTranslator(params.locale, "Tutorials");
 
   return (
