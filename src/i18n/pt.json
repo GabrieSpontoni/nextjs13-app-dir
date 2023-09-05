@@ -30,7 +30,15 @@
     "description": "Acompanhe tutoriais sobre os principais recursos para a construção de aplicações web modernas usando Next.js.",
     "jest": {
       "title": "Testes com Jest",
-      "description": "Aprenda a testar aplicações Next.js com Jest e React Testing Library."
+      "description": "Aprenda a testar aplicações Next.js com Jest e React Testing Library.",
+      "unitTitle": "Testes Unitários",
+      "unitDescription": "Testes unitários são testes que verificam se uma unidade de código (função, classe, componente) funciona como esperado. São muito importantes para garantir que o código funcione corretamente e que não quebre quando novas funcionalidades forem adicionadas. Vamos ver como os testes estão aplicados em nosso projeto de exemplo.",
+      "whatToTestTitle": "O que testar?",
+      "whatToTestDescription": "A primeira coisa que devemos fazer é identificar o que deve ser testado. Ao longo do desenvolvimento deste projeto eu tive um bug ao refatorar o componente CardWithImageOverlay. O componente atualmente está sendo usado em dois locais diferentes, na página de início e na página de tutoriais. Ao refatorar o componente, eu acidentalmente quebrei o componente na página de início de uma forma que o botão inferior não estava com a string correta (acessar ou em breve). Para evitar que isso aconteça novamente, vamos escrever um teste para garantir que o componente funcione como esperado em todos os locais que ele é usado."
+    },
+    "githubActions": {
+      "title": "GitHub Actions",
+      "description": "Aprenda a configurar CI/CD para aplicações Next.js com GitHub Actions."
     }
   }
 }
