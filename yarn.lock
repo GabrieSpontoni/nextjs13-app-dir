@@ -846,10 +846,10 @@
     lz-string "^1.5.0"
     pretty-format "^27.0.2"
 
-"@testing-library/jest-dom@^6.1.2":
-  version "6.1.2"
-  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-6.1.2.tgz#3e7422904349223cb1e04968adada63f65f40d5b"
-  integrity sha512-NP9jl1Q2qDDtx+cqogowtQtmgD2OVs37iMSIsTv5eN5ETRkf26Kj6ugVwA93/gZzzFWQAsgkKkcftDe91BJCkQ==
+"@testing-library/jest-dom@6.1.3":
+  version "6.1.3"
+  resolved "https://registry.yarnpkg.com/@testing-library/jest-dom/-/jest-dom-6.1.3.tgz#443118c9e4043f96396f120de2c7122504a079c5"
+  integrity sha512-YzpjRHoCBWPzpPNtg6gnhasqtE/5O4qz8WCwDEaxtfnPO6gkaLrnuXusrGSPyhIGPezr1HM7ZH0CFaUTY9PJEQ==
   dependencies:
     "@adobe/css-tools" "^4.3.0"
     "@babel/runtime" "^7.9.2"
@@ -958,7 +958,7 @@
   dependencies:
     "@types/istanbul-lib-report" "*"
 
-"@types/jest@^29.5.4":
+"@types/jest@29.5.4":
   version "29.5.4"
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-29.5.4.tgz#9d0a16edaa009a71e6a71a999acd582514dab566"
   integrity sha512-PhglGmhWeD46FYOVLt3X7TiWjzwuVGW9wG/4qocPevXMjCmrIc5b6db9WjeGE4QYVpUAWMDv3v0IiBwObY289A==
@@ -1676,10 +1676,10 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.2.tgz#1d4bf9d572f11c14031f0436e1c10bc1f571f50b"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
 
-daisyui@3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.6.5.tgz#4e0534591ca18e0fcfb3ad35b91b9f875beaf8fd"
-  integrity sha512-1yPTKlCf1usfSsUaTvu5l/Fi8TEchy8H9/rAtvPMwWd++ifl56ASnaDQfHZhl9lnPtCWj/mWicrwL7aaNz53KA==
+daisyui@3.7.3:
+  version "3.7.3"
+  resolved "https://registry.yarnpkg.com/daisyui/-/daisyui-3.7.3.tgz#247cfefa0112c31679af9035eff65e1bd866f062"
+  integrity sha512-gKlz3RwfaukZxf8nQZsDAZ7quUSi7F8HjGGB34tkHruvfQB9cgVDQsmqUqSQtkAJYvzbrg/3dLUa9+5jF4iC1A==
   dependencies:
     colord "^2.9"
     css-selector-tokenizer "^0.8"
@@ -3690,10 +3690,10 @@ negotiator@^0.6.3:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.3.tgz#58e323a72fedc0d6f9cd4d31fe49f51479590ccd"
   integrity sha512-+EUsqGPLsM+j/zdChZjsnX51g4XrHFOIXwfnCVPGlQk/k5giakcKsuxCObBRu6DSm9opw/O6slWbJdghQM4bBg==
 
-next-intl@3.0.0-beta.15:
-  version "3.0.0-beta.15"
-  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-3.0.0-beta.15.tgz#e9446fa26e63afcf812dde2ea7eb829f75777d50"
-  integrity sha512-u28FFxUUQNiTXyMmpCHKG/lWGIkGpT7e564MqnkRX5ExCWbnzx90fRqLsDHDkYGIYw5iTzvlmdSQO6OuDu9k4w==
+next-intl@3.0.0-beta.16:
+  version "3.0.0-beta.16"
+  resolved "https://registry.yarnpkg.com/next-intl/-/next-intl-3.0.0-beta.16.tgz#e817e4e1f43dcbfd910c0b01e0b9cc09baec035a"
+  integrity sha512-H7JK7d4cnEoECFzMgcOvLXWaEBcw/cqi83vUPl8lZSROInJs12kT1gCOKDV9zMPeG1QWiLf4nMhH5DkccUSqYA==
   dependencies:
     "@formatjs/intl-localematcher" "^0.2.32"
     negotiator "^0.6.3"
