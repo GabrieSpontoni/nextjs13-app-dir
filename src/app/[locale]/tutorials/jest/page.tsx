@@ -1,6 +1,7 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
-import { TitleAndDescription } from "@/components/TitleAndDescription";
+import { TitleAndDescription } from "@/app/[locale]/tutorials/components/TitleAndDescription";
 import { getTranslator } from "next-intl/server";
+import { CardWithImageOverlay } from "@/components/CardWithImageOverlay";
 
 interface TutorialsJestProps extends ParamsLocaleModel {}
 
@@ -26,6 +27,30 @@ export default async function TutorialsJest({ params }: TutorialsJestProps) {
         <TitleAndDescription
           title={t("jest.whatToTestTitle")}
           description={t("jest.whatToTestDescription")}
+          isSubTitle
+        />
+      </div>
+
+      <div className="mt-8 grid grid-cols-1 gap-5 lg:grid-cols-2">
+        <CardWithImageOverlay
+          title={"lorem ..."}
+          description={"lorem ..."}
+          src={""}
+          alt={""}
+        />
+        <CardWithImageOverlay
+          title={"lorem ..."}
+          description={"lorem ..."}
+          src={""}
+          alt={""}
+          href="#"
+        />
+      </div>
+
+      <div className="mt-8 mb-20">
+        <TitleAndDescription
+          title={t("jest.howToTestTitle")}
+          description={t("jest.howToTestDescription")}
           isSubTitle
         />
       </div>

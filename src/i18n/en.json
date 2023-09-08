@@ -34,7 +34,9 @@
       "unitTitle": "Unit Testing",
       "unitDescription": "Unit tests are tests that verify that a unit of code (function, class, component) works as expected. They are very important to ensure that the code works correctly and does not break when new features are added. Let's see how the tests are applied in our example project.",
       "whatToTestTitle": "What to test?",
-      "whatToTestDescription": "The first thing we must do is identify what must be tested. During the development of this project I had a bug when refactoring the CardWithImageOverlay component. The component is currently being used in two different places, the home page and the tutorials page. When refactoring the component, I accidentally broke the component on the homepage in a way that the bottom button wasn't with the correct string (access or soon). To prevent this from happening again, let's write a test to ensure the component works as expected everywhere it's used."
+      "whatToTestDescription": "The first thing we must do is identify what must be tested. During the development of this project I had a bug when refactoring the CardWithImageOverlay component. The component is currently being used in two different places, the home page and the tutorials page. When refactoring the component, I accidentally broke the component on the homepage in a way that the bottom button wasn't with the correct string (access or soon). To prevent this from happening again, let's write a test to ensure the component works as expected everywhere it's used.",
+      "howToTestTitle": "How to test?",
+      "howToTestDescription": "To test the component, we can perform two tests. The first test is to make sure the component works correctly when it doesn't have an href returning the string 'Coming soon'. The second test is to ensure that the component works correctly when you have an href returning the string 'Access'."
     },
     "githubActions": {
       "title": "GitHub Actions",

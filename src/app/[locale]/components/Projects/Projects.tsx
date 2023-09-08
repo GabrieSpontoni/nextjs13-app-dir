@@ -1,7 +1,7 @@
 "use client";
 import { useInView } from "react-intersection-observer";
 import { useTranslations } from "next-intl";
-import { CardWithImageOverlay } from "../CardWithImageOverlay";
+import { CardWithImageOverlay } from "@/components/CardWithImageOverlay";
 
 interface ProjectsProps {}
 

@@ -1,7 +1,7 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
-import { TitleAndDescription } from "@/components/TitleAndDescription";
+import { TitleAndDescription } from "@/app/[locale]/tutorials/components/TitleAndDescription";
 import { getTranslator } from "next-intl/server";
-import { CardWithImageOverlay } from "@/components/CardWithImageOverlay";
+import { TutorialsCardsList } from "@/app/[locale]/tutorials/components/TutorialsCardsList";
 
 interface TutorialsProps extends ParamsLocaleModel {}
 
@@ -11,14 +11,7 @@ export default async function Tutorials({ params }: TutorialsProps) {
   return (
     <main className="m-4">
       <TitleAndDescription title={t("title")} description={t("description")} />
-      <div className="grid grid-cols-1 mt-10 gap-5 lg:grid-cols-3">
-        <CardWithImageOverlay
-          src="/images/jest.png"
-          title={t("jest.title")}
-          alt={t("jest.description")}
-          description={t("jest.description")}
-        />
-      </div>
+      <TutorialsCardsList />
     </main>
   );
 }

@@ -1,8 +1,8 @@
 import { ParamsLocaleModel } from "@/types/paramsLocale";
-import { Hero } from "@/components/Hero";
-import { Projects } from "@/components/Projects";
-import { Footer } from "@/components/Footer";
+import { Hero } from "@/app/[locale]/components/Hero";
+import { Footer } from "@/app/[locale]/components/Footer";
 import { Header } from "@/components/Header";
+import { Projects } from "./components/Projects";
 
 interface HomeProps extends ParamsLocaleModel {}
 
