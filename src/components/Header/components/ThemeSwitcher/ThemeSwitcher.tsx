@@ -18,10 +18,10 @@ export function ThemeSwitcher() {
         className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute"
       >
         <li>
-          <a onClick={() => setTheme("light")}>{t("light")}</a>
+          <div onClick={() => setTheme("light")}>{t("light")}</div>
         </li>
         <li>
-          <a onClick={() => setTheme("night")}>{t("dark")}</a>
+          <div onClick={() => setTheme("night")}>{t("dark")}</div>
         </li>
       </ul>
     </div>

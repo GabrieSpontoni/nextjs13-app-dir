@@ -25,7 +25,7 @@ export function SidebarList() {
         <li key={index} className={`${item.disabled ? "disabled" : undefined}`}>
           <a
             className={`${pathname === item.url ? "active" : undefined}`}
-            href={item.disabled ? undefined : `/${locale}${item.url}`}
+            href={item.disabled ? "/" : `/${locale}${item.url}`}
           >
             {item.title}
           </a>

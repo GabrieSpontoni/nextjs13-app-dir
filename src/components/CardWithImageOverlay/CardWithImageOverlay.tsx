@@ -45,7 +45,10 @@ export function CardWithImageOverlay({
         <p className="text-justify">{description}</p>
         <div className="card-actions justify-end">
           <button className="btn btn-primary" disabled={!href}>
-            <Link href={href || ""} target={isTargetBlank ? "_blank" : "_self"}>
+            <Link
+              href={href || "/"}
+              target={isTargetBlank ? "_blank" : "_self"}
+            >
               {href ? t("access") : t("commingSoon")}
             </Link>
           </button>

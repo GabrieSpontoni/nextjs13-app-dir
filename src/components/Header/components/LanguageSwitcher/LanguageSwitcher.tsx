@@ -22,22 +22,22 @@ export function LanguageSwitcher() {
         className="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52 absolute"
       >
         <li>
-          <a
+          <div
             onClick={() => {
               onSelectChange("pt");
             }}
           >
             pt-BR
-          </a>
+          </div>
         </li>
         <li>
-          <a
+          <div
             onClick={() => {
               onSelectChange("en");
             }}
           >
             en-US
-          </a>
+          </div>
         </li>
       </ul>
     </div>
