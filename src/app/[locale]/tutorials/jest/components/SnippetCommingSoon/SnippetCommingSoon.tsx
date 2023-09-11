@@ -19,7 +19,6 @@ export function SnippetCommingSoon({}: SnippetCommingSoonProps) {
         <code className="text-code-red">{" => "}</code>
         <code className="text-code-gray">{"{"}</code>
       </pre>
-
       <pre className="ml-code-left-sm">
         <code className="text-code-purple">renderWithProviders</code>
         <code className="text-code-gray">(</code>
@@ -78,7 +77,6 @@ export function SnippetCommingSoon({}: SnippetCommingSoonProps) {
         <code className="text-code-gray">)</code>
         <code className="text-code-gray">;</code>
       </pre>
-
       <pre>
         <code className="text-code-gray">{`}`}</code>
         <code className="text-code-gray">)</code>

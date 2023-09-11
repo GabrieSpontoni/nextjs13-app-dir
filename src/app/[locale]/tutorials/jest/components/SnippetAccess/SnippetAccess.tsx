@@ -19,7 +19,6 @@ export function SnippetAccess({}: SnippetAccessProps) {
         <code className="text-code-red">{" => "}</code>
         <code className="text-code-gray">{"{"}</code>
       </pre>
-
       <pre className="ml-code-left-sm">
         <code className="text-code-purple">renderWithProviders</code>
         <code className="text-code-gray">(</code>
@@ -63,7 +62,6 @@ export function SnippetAccess({}: SnippetAccessProps) {
         <code className="text-code-gray">)</code>
         <code className="text-code-gray">;</code>
       </pre>
-
       <pre className="ml-code-left-sm">
         <code className="text-code-red">const</code>
         <code className="text-code-blue-2"> accessText </code>
@@ -84,6 +82,11 @@ export function SnippetAccess({}: SnippetAccessProps) {
         <code className="text-code-gray">).</code>
         <code className="text-code-purple">toBeVisible</code>
         <code className="text-code-gray">(</code>
+        <code className="text-code-gray">)</code>
+        <code className="text-code-gray">;</code>
+      </pre>
+      <pre>
+        <code className="text-code-gray">{`}`}</code>
         <code className="text-code-gray">)</code>
         <code className="text-code-gray">;</code>
       </pre>
