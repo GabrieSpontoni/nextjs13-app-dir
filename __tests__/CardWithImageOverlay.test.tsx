@@ -17,7 +17,7 @@ describe("CardWithImageOverlay", () => {
       />
     );
 
-    const accessText = screen.getByText("Acessa");
+    const accessText = screen.getByText("Acess");
 
     expect(accessText).toBeVisible();
   });
