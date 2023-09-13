@@ -24,15 +24,3 @@ jobs:
 
       - name: Run Tests
         run: yarn test
-
-protections:
-  main:
-    required_status_checks:
-      strict: true
-      contexts:
-        - continuous-integration/github-actions
-  dev:
-    required_status_checks:
-      strict: true
-      contexts:
-        - continuous-integration/github-actions
