@@ -1,46 +1,38 @@
-# Nome do fluxo de trabalho (workflow)
 name: Run Tests
 
-# Evento que aciona o fluxo de trabalho
 on:
   pull_request:
     branches:
-      - dev   # O fluxo de trabalho é acionado para a branch "dev"
-      - main  # O fluxo de trabalho é acionado para a branch "main"
+      - dev
+      - main
 
-# Definição dos trabalhos a serem executados no fluxo de trabalho
 jobs:
-  # Nome do trabalho
   test:
-    # Especificações do ambiente em que o trabalho será executado
     runs-on: ubuntu-latest
 
-    # Passos (etapas) a serem executados no trabalho
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # Ação para fazer checkout do código do repositório
+        uses: actions/checkout@v2
 
       - name: Set up Node.js
-        uses: actions/setup-node@v2  # Ação para configurar o ambiente Node.js
+        uses: actions/setup-node@v2
         with:
-          node-version: 18  # Versão do Node.js a ser usada
+          node-version: 18
 
       - name: Install dependencies
-        run: yarn install  # Comando para instalar as dependências do projeto
+        run: yarn install
 
       - name: Run Tests
-        run: yarn test  # Comando para executar os testes do projeto
+        run: yarn test
 
-# Configuração para proteger a branch de mesclagens quando a pipeline falhar
 protections:
   main:
     required_status_checks:
-      strict: true  # Exige que todos os status checks sejam bem-sucedidos
+      strict: true
       contexts:
-        - continuous-integration/github-actions  # Nome do status check da pipeline
-
+        - continuous-integration/github-actions
   dev:
     required_status_checks:
-      strict: true  # Exige que todos os status checks sejam bem-sucedidos
+      strict: true
       contexts:
-        - continuous-integration/github-actions  # Nome do status check da pipeline
+        - continuous-integration/github-actions
