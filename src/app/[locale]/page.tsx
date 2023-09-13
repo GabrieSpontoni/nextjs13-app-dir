@@ -9,6 +9,7 @@ interface HomeProps extends ParamsLocaleModel {}
 export default async function Home({ params }: HomeProps) {
   return (
     <main>
+      Test
       <Header withMenuHamburguer={false} />
       <Hero params={params} />
       <Projects />
