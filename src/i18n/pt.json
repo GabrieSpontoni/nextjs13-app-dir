@@ -41,6 +41,10 @@
     "githubActions": {
       "title": "GitHub Actions",
       "description": "Aprenda a configurar CI/CD para aplicações Next.js com GitHub Actions."
+    },
+    "tailwindcss": {
+      "title": "Tailwind CSS",
+      "description": "Aprenda a configurar Tailwind CSS em aplicações Next.js."
     }
   }
 }

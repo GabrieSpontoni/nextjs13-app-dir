@@ -16,6 +16,20 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
       description: t("jest.description"),
       href: "/tutorials/jest",
     },
+    {
+      src: "/images/github-actions.png",
+      title: t("githubActions.title"),
+      alt: t("githubActions.description"),
+      description: t("githubActions.description"),
+      href: "/tutorials/github-actions",
+    },
+    {
+      src: "/images/tailwind.jpg",
+      title: t("tailwindcss.title"),
+      alt: t("tailwindcss.description"),
+      description: t("tailwindcss.description"),
+      href: "",
+    },
   ];
 
   return (
@@ -28,7 +42,7 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
             title={card.title}
             alt={card.alt}
             description={card.description}
-            href={`/${locale}${card.href}`}
+            href={card.href && `/${locale}${card.href}`}
           />
         ))}
       </div>
