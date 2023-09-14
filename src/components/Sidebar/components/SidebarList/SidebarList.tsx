@@ -15,6 +15,11 @@ export function SidebarList() {
     {
       title: t("githubActions.title"),
       url: "/tutorials/github-actions",
+      disabled: false,
+    },
+    {
+      title: t("tailwindcss.title"),
+      url: "/tutorials/...",
       disabled: true,
     },
   ];
@@ -22,9 +27,9 @@ export function SidebarList() {
   return (
     <ul className="menu py-10 w-80 min-h-full bg-base-100 text-base-content">
       {sidebarItems.map((item, index) => (
-        <li key={index} className={`${item.disabled ? "disabled" : undefined}`}>
+        <li key={index} className={`${item.disabled ? "disabled" : "active"}`}>
           <a
-            className={`${pathname === item.url ? "active" : undefined}`}
+            className={`${pathname === item.url ? "active" : "disabled"}`}
             href={item.disabled ? undefined : `/${locale}${item.url}`}
           >
             {item.title}
