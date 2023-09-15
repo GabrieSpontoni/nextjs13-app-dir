@@ -24,7 +24,7 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
       href: "/tutorials/github-actions",
     },
     {
-      src: "/images/tailwind.jpg",
+      src: "/images/tailwind.webp",
       title: t("tailwindcss.title"),
       alt: t("tailwindcss.description"),
       description: t("tailwindcss.description"),
