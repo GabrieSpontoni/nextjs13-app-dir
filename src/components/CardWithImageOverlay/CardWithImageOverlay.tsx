@@ -24,7 +24,10 @@ export function CardWithImageOverlay({
   const t = useTranslations("Common");
 
   return (
-    <div className="card shadow-xl image-full z-0">
+    <div
+      className="card shadow-xl image-full z-0"
+      data-testid="card-with-image-overlay"
+    >
       <figure>
         <div className="flex justify-center items-center h-full w-full relative">
           <RenderCondition condition={!!src}>
@@ -44,7 +47,10 @@ export function CardWithImageOverlay({
         <h2 className="card-title">{title}</h2>
         <p className="text-justify">{description}</p>
         <div className="card-actions justify-end">
-          <button className="btn btn-primary" disabled={!href}>
+          <button
+            className="btn btn-primary disabled:text-gray-300"
+            disabled={!href}
+          >
             <Link
               href={href || "/"}
               target={isTargetBlank ? "_blank" : "_self"}

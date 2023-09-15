@@ -10,19 +10,19 @@
     "tutorials": "Tutorials"
   },
   "Hero": {
-    "description": "Front-end Developer graduated in Computer Engineering, with 3+ years of experience. I have been prominently engaged at MB Labs for over a year, contributing to large-scale projects and working with advanced technologies. I possess strong skills in CSS frameworks (Chakra UI, Bootstrap, Ant Design), Redux, Zustand, Context, Next.js, Server Components, React Query, and other technologies related to React. I am always committed to improving my front-end skills. Welcome to my webpage, where I share knowledge and projects!",
-    "developer": "Developer Front-end",
-    "footerTitle": "Main Technologies"
+    "description": "Front-end Developer with a degree in Computer Engineering, with 3+ years of experience. I have excelled at MB Labs for over a year, contributing to large-scale projects and working with advanced technologies. I possess strong skills in CSS frameworks (Chakra UI, Bootstrap, Ant Design), Redux, Zustand, Context, Next.js, Server Components, React Query, and other React-focused technologies. Committed to continuously improving front-end skills. Welcome to my webpage, where I share knowledge and projects!",
+    "developer": "Front-end Developer",
+    "footerTitle": "Key Technologies"
   },
   "Projects": {
     "title": "Projects",
     "descriptions": {
-      "B&T": "Technology company operating in the foreign exchange market. I work on the development of a payment management system, using key technologies such as React, JavaScript, Redux, and Material-UI.",
-      "Cinemark": "A company that needs no introduction. I initially worked on the development and revamping of the new website, using major technologies such as Next.js 13, Chakra UI, React Query, and Zustand.",
-      "CargoPlace": "Cargo transportation company. I work on application development, using key technologies like Next.js, Context API, and Chakra UI.",
-      "Arco": "Arco, an education company. I work on application development, using key technologies like Next.js, Context API, and Chakra UI.",
-      "Marvin": "Full Stack Developer at Marvin, a real estate company. I work on application development, using key technologies like React, JavaScript, Redux, and Material-UI.",
-      "Zap": "Back-end Developer at Zap, a delivery company. I work on application development, using key technologies like Node.js."
+      "B&T": "A technology company operating in the currency exchange market. I work on the development of a payment management system using React, JavaScript, Redux, and Material-UI.",
+      "Cinemark": "A well-known company. I initially worked on developing and redesigning the new website, using Next.js 13, Chakra UI, React Query, and Zustand.",
+      "CargoPlace": "A cargo transportation company. I work on application development using Next.js, Context API, and Chakra UI.",
+      "Arco": "Arco, an education company. I work on application development using Next.js, Context API, and Chakra UI.",
+      "Marvin": "Full Stack Developer at Marvin, a real estate company. I work on application development using React, JavaScript, Redux, and Material-UI.",
+      "Zap": "Back-end Developer at Zap, a delivery company. I work on application development using Node.js."
     }
   },
   "Tutorials": {
@@ -30,28 +30,26 @@
     "description": "Follow tutorials on key resources for building modern web applications using Next.js.",
     "jest": {
       "title": "Testing with Jest",
-      "description": "Jest is a JavaScript testing framework designed to ensure correctness of any JavaScript codebase. It allows you to write tests with an approachable, familiar and feature-rich API that gives you results quickly.",
+      "description": "Learn how to test Next.js applications with Jest and React Testing Library.",
       "unitTitle": "Unit Testing",
-      "unitDescription": "Unit tests are tests that verify that a unit of code (function, class, component) works as expected. They are very important to ensure that the code works correctly and does not break when new features are added. Let's see how the tests are applied in our example project.",
-      "whatToTestTitle": "What to test?",
-      "whatToTestDescription": "During the development of this project, an issue arose while refactoring the 'CardWithImageOverlay' component. This component is currently utilized in various parts of the application, including the homepage, tutorial page, and the current page. While refactoring the component, I inadvertently broke its functionality on the homepage, resulting in a button with incorrect text ('Common.access' or 'Common.commingSoon') instead of the expected translations ('Access' or 'Coming Soon'). To prevent similar issues in the future, it's essential to write a test that ensures the component functions correctly in all the places it's used, verifying that translations and functionalities align with expectations.",
-      "howToTestTitle": "How to test?",
-      "howToTestDescription": "To test the component, we can perform two tests. The first test is to ensure that the component functions correctly when it doesn't have an 'href' attribute, returning the string 'Em breve' (coming soon). The second test is to guarantee that the component works correctly when it does have an 'href' attribute, returning the string 'Acessar' (access)."
+      "unitDescription": "Unit tests verify whether a unit of code (function, class, component) functions as expected. They are crucial for ensuring code works correctly and doesn't break when new features are added. Let's see how tests are applied in our example project.",
+      "whatToTestTitle": "What to Test?",
+      "whatToTestDescription": "During the development of this project, there was an issue when refactoring the 'CardWithImageOverlay' component, which is used in various parts of the application, including the home page, tutorials page, and the current page. While refactoring the component, I accidentally broke the functionality on the home page, resulting in a button with incorrect text ('Common.access' or 'Common.comingSoon') instead of the appropriate translations ('Access' or 'Coming Soon'). To prevent similar issues in the future, it is essential to write a test that ensures the component functions correctly everywhere it is used, checking if translations and functionality align with expectations.",
+      "howToTestTitle": "How to Test?",
+      "howToTestDescription": "To test the component, we can perform two tests. The first test is to ensure the component works correctly when it doesn't have an 'href' attribute, returning the string 'Coming Soon'. The second test is to ensure the component works correctly when it has an 'href' attribute, returning the string 'Access'."
     },
     "githubActions": {
       "title": "GitHub Actions",
-      "description": "GitHub Actions makes it easy to automate all your software workflows, now with world-class CI/CD. Build, test, and deploy your code right from GitHub. Make code reviews, branch management, and issue triaging work the way you want.",
+      "description": "Learn how to configure CI/CD for Next.js applications with GitHub Actions.",
       "githubActionsTitle": "GitHub Actions",
-      "githubActionsDescription": "GitHub Actions is a powerful tool that allows you to automate tasks within your software development life cycle. You can build, test, and deploy your code right from GitHub. You can also create custom actions or use actions shared by the GitHub community. In this tutorial, we will learn how to create a custom action to deploy a Next.js application to Vercel.",
-      "setupTitle": "Setup",
-      "setupDescription": "To create a custom action, we need to create a new repository. In this repository, we will create a new folder called '.github' and inside this folder, we will create another folder called 'workflows'. Inside the 'workflows' folder, we will create a new file called 'deploy.yml'.",
+      "githubActionsDescription": "GitHub Actions is a CI/CD tool that allows you to automate tasks such as testing, building, and deploying in a GitHub repository. In this tutorial, we will learn how to set up GitHub Actions to test our Next.js application before deployment.",
+      "setupTitle": "Configuration",
+      "setupDescription": "To configure GitHub Actions, we need to create a file called '.github/workflows/tests.yml' in the project's root directory. This file contains the GitHub Actions configurations. Let's start with the configuration to test the application.",
       "setupConclusion": "Now, whenever a pull request is opened for the 'dev' or 'main' branch, GitHub Actions will automatically run the application's tests. If the tests fail, the pull request can still be merged. However, if you want test success to be mandatory for merging, simply configure this rule in the repository settings by going to Settings > Branches. When the tests pass successfully, the pull request will be accepted, and automatic deployment will occur on Vercel as soon as the pull request is merged."
     },
-    "tailwindcss": {
-      "title": "Tailwind CSS",
-      "description": "Tailwind CSS is a highly customizable, low-level CSS framework that gives you all of the building blocks you need to build bespoke designs without any annoying opinionated styles you have to fight to override."
+    "nextJs": {
+      "title": "Next.js / Quick Start",
+      "description": "Learn how to create modern web applications with Next.js quickly, easily and pre-configured."
     }
   }
 }
-  
-
