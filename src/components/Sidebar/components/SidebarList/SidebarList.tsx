@@ -8,6 +8,11 @@ export function SidebarList() {
   const t = useTranslations("Tutorials");
   const sidebarItems = [
     {
+      title: t("nextJs.title"),
+      url: "/tutorials/...",
+      disabled: true,
+    },
+    {
       title: t("jest.title"),
       url: "/tutorials/jest",
       disabled: false,
@@ -16,11 +21,6 @@ export function SidebarList() {
       title: t("githubActions.title"),
       url: "/tutorials/github-actions",
       disabled: false,
-    },
-    {
-      title: t("tailwindcss.title"),
-      url: "/tutorials/...",
-      disabled: true,
     },
   ];
 
