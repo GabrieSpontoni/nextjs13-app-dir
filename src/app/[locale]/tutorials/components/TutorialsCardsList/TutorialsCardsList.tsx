@@ -10,6 +10,13 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
 
   const cards = [
     {
+      src: "/nextjs-icon.svg",
+      title: t("nextJs.title"),
+      alt: t("nextJs.description"),
+      description: t("nextJs.description"),
+      href: "",
+    },
+    {
       src: "/images/jest.png",
       title: t("jest.title"),
       alt: t("jest.description"),
@@ -22,13 +29,6 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
       alt: t("githubActions.description"),
       description: t("githubActions.description"),
       href: "/tutorials/github-actions",
-    },
-    {
-      src: "/images/tailwind.webp",
-      title: t("tailwindcss.title"),
-      alt: t("tailwindcss.description"),
-      description: t("tailwindcss.description"),
-      href: "",
     },
   ];
 

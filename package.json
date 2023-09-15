@@ -11,14 +11,14 @@
     "test:watch": "jest --watch"
   },
   "dependencies": {
-    "@types/node": "20.6.0",
+    "@types/node": "20.6.1",
     "@types/react": "18.2.21",
     "@types/react-dom": "18.2.7",
     "autoprefixer": "10.4.15",
     "eslint": "8.49.0",
     "eslint-config-next": "13.4.19",
     "next": "13.4.19",
-    "next-intl": "3.0.0-beta.16",
+    "next-intl": "3.0.0-beta.17",
     "next-themes": "0.2.1",
     "postcss": "8.4.29",
     "react": "18.2.0",
