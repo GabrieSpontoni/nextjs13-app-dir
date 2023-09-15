@@ -4,7 +4,7 @@ export const metadata = {
     "Tutorials with GitHub Actions, a powerful tool that allows you to automate tasks within your software development life cycle.",
 };
 
-export default function TutorialsJestLayout({
+export default function TutorialsGithubActionsLayout({
   children,
 }: {
   children: React.ReactNode;

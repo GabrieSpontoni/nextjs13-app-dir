@@ -40,7 +40,12 @@
     },
     "githubActions": {
       "title": "GitHub Actions",
-      "description": "Aprenda a configurar CI/CD para aplicações Next.js com GitHub Actions."
+      "description": "Aprenda a configurar CI/CD para aplicações Next.js com GitHub Actions.",
+      "githubActionsTitle": "GitHub Actions",
+      "githubActionsDescription": "GitHub Actions é uma ferramenta de CI/CD que permite automatizar tarefas, como testes, build e deploy, em um repositório do GitHub. Neste tutorial, vamos aprender a configurar o GitHub Actions para testar nossa aplicação Next.js antes de fazermos deploy.",
+      "setupTitle": "Configuração",
+      "setupDescription": "Para configurar o GitHub Actions, precisamos criar um arquivo chamado '.github/workflows/tests.yml' na raiz do projeto. Este arquivo contém as configurações do GitHub Actions. Vamos começar com a configuração para testar a aplicação.",
+      "setupConclusion": "Agora, sempre que um pull request for aberto para a branch 'dev' ou 'main', o GitHub Actions executará automaticamente os testes da aplicação. Se os testes falharem, o pull request ainda poderá ser mesclado. No entanto, se você desejar que a aprovação dos testes seja obrigatória para a mesclagem, basta configurar essa regra nas configurações do repositório, acessando Configurações > Branches. Quando os testes passarem com sucesso, o pull request será aceito e o deploy ocorrerá automaticamente na Vercel assim que o pull request for mesclado."
     },
     "tailwindcss": {
       "title": "Tailwind CSS",
