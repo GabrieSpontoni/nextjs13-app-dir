@@ -49,7 +49,13 @@
     },
     "nextJs": {
       "title": "Next.js / Quick Start",
-      "description": "Learn how to create modern web applications with Next.js quickly, easily and pre-configured."
+      "description": "Learn how to create modern web applications with Next.js quickly, easily and pre-configured.",
+      "quickStartTitle": "Quick Start",
+      "quickStartDescription": "Next.js is a React framework that allows you to create modern web applications quickly, easily and pre-configured. In this tutorial, we will learn how you can start using Next.js in your project. We are making a model of this project available on GitHub in an updated form and with the latest configurations.",
+      "configTitle": "Configuration",
+      "configDescription": "To get started, access the project's GitHub available at <important><very>very</very> important</important>. Then clone the repository and install the project's dependencies with the 'yarn' command.",
+      "step1Title": "Clone the repository and install the dependencies ",
+      "step2Title": "Start the project"
     }
   }
 }
