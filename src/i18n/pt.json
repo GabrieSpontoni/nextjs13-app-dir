@@ -49,7 +49,11 @@
     },
     "nextJs": {
       "title": "Next.js / Começo Rápido",
-      "description": "Aprenda a criar aplicações web modernas com Next.js de forma rápida, fácil e pré-configurada."
+      "description": "Aprenda a criar aplicações web modernas com Next.js de forma rápida, fácil e pré-configurada.",
+      "quickStartTitle": "Começo Rápido",
+      "quickStartDescription": "Next.js é um framework React que permite criar aplicações web modernas de forma rápida, fácil e pré-configurada. Neste tutorial, aprenderemos como você pode começar a usar o Next.js em seu projeto, estamos disponibilizando um template deste projeto no GitHub de forma atualizada e com as configurações mais recentes.",
+      "step1Title": "Clonar Projeto disponível no GitHub e instalar as dependências ",
+      "step2Title": "Executar o projeto"
     }
   }
 }

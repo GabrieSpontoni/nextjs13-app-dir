@@ -9,8 +9,8 @@ export function SidebarList() {
   const sidebarItems = [
     {
       title: t("nextJs.title"),
-      url: "/tutorials/...",
-      disabled: true,
+      url: "/tutorials/quick-start",
+      disabled: false,
     },
     {
       title: t("jest.title"),

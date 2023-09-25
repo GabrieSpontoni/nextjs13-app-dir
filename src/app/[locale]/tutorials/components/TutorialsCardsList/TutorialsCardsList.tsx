@@ -14,7 +14,7 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
       title: t("nextJs.title"),
       alt: t("nextJs.description"),
       description: t("nextJs.description"),
-      href: "",
+      href: "/tutorials/quick-start",
     },
     {
       src: "/images/jest.png",
