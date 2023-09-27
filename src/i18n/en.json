@@ -44,7 +44,7 @@
       "githubActionsTitle": "GitHub Actions",
       "githubActionsDescription": "GitHub Actions is a CI/CD tool that allows you to automate tasks such as testing, building, and deploying in a GitHub repository. In this tutorial, we will learn how to set up GitHub Actions to test our Next.js application before deployment.",
       "setupTitle": "Configuration",
-      "setupDescription": "To configure GitHub Actions, we need to create a file called '.github/workflows/tests.yml' in the project's root directory. This file contains the GitHub Actions configurations. Let's start with the configuration to test the application.",
+      "setupDescription": "This project already has all the settings ready, just create your repository and clone the project and githubActions will do the work automatically, remembering that for this it is necessary that your repository has at least two branches with the following names (dev and main), Let's see how the process is done. To configure GitHub Actions, we need to create a file called '.github/workflows/tests.yml' in the project root. This file contains the GitHub Actions settings. Let's start with the configuration to test the application.",
       "setupConclusion": "Now, whenever a pull request is opened for the 'dev' or 'main' branch, GitHub Actions will automatically run the application's tests. If the tests fail, the pull request can still be merged. However, if you want test success to be mandatory for merging, simply configure this rule in the repository settings by going to Settings > Branches. When the tests pass successfully, the pull request will be accepted, and automatic deployment will occur on Vercel as soon as the pull request is merged."
     },
     "nextJs": {
