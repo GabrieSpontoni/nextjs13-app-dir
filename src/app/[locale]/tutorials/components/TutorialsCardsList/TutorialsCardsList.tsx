@@ -17,6 +17,12 @@ export function TutorialsCardsList({}: TutorialsCardsListProps) {
       href: "/tutorials/quick-start",
     },
     {
+      src: "/images/i18n.png",
+      title: t("i18n.title"),
+      alt: t("i18n.description"),
+      description: t("i18n.description"),
+    },
+    {
       src: "/images/jest.png",
       title: t("jest.title"),
       alt: t("jest.description"),
