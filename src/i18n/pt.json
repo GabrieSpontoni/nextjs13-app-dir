@@ -54,6 +54,12 @@
       "quickStartDescription": "Next.js é um framework React que permite criar aplicações web modernas de forma rápida, fácil e pré-configurada. Neste tutorial, aprenderemos como você pode começar a usar o Next.js em seu projeto, estamos disponibilizando um template deste projeto no GitHub de forma atualizada e com as configurações mais recentes.",
       "step1Title": "Clonar Projeto disponível no GitHub e instalar as dependências ",
       "step2Title": "Executar o projeto"
+    },
+    "i18n": {
+      "title": "Internacionalização",
+      "description": "Aprenda a internacionalizar aplicações Next.js usando a biblioteca next-intl.",
+      "i18nTitle": "Internacionalização",
+      "i18nDescription": "next-intl é uma biblioteca que permite internacionalizar aplicações Next.js de forma otimizada e rápida. Neste tutorial, aprenderemos como configurar o Next.js i18n em nosso projeto."
     }
   }
 }

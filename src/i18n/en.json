@@ -56,6 +56,12 @@
       "configDescription": "To get started, access the project's GitHub available at <important><very>very</very> important</important>. Then clone the repository and install the project's dependencies with the 'yarn' command.",
       "step1Title": "Clone the repository and install the dependencies ",
       "step2Title": "Start the project"
+    },
+    "i18n": {
+      "title": "Internationalization",
+      "description": "Learn how to configure internationalization in Next.js applications.",
+      "i18nTitle": "Internationalization",
+      "i18nDescription": "Internationalization is the process of adapting a product to a specific language, culture, and location. In this tutorial, we will learn how to configure internationalization in Next.js applications."
     }
   }
 }
