@@ -13,6 +13,11 @@ export function SidebarList() {
       disabled: false,
     },
     {
+      title: t("i18n.title"),
+      url: "/tutorials/internacionalization",
+      disabled: true,
+    },
+    {
       title: t("jest.title"),
       url: "/tutorials/jest",
       disabled: false,
