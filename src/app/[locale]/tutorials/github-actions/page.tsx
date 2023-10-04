@@ -33,7 +33,7 @@ export default async function TutorialsGithubActions({
         />
       </div>
 
-      <div className="mt-8">
+      <div className="mt-8 grid grid-cols-1">
         <SnippetGithubActions />
       </div>
 
